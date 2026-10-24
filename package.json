@@ -4,6 +4,10 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "dev": "bun --hot index.ts",
+    "build": "bun build ./index.html --target browser --outdir ./dist --minify --sourcemap=linked",
+    "start": "bun scripts/serve.ts",
+    "test": "bun test",
     "typecheck": "bun check"
   },
   "devDependencies": {
